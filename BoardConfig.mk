@@ -143,7 +143,7 @@ TW_INCLUDE_RESETPROP := true
 TW_DEVICE_VERSION := Massatrio16
 
 #OFRP
-OF_FL_PATH1="/sys/devices/virtual/torch/torch"
+OF_FL_PATH1= '/sys/devices/virtual/torch/torch'
 OF_MAINTAINER=Massatrio16
 
     
