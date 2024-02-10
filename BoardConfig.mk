@@ -142,11 +142,7 @@ TW_INCLUDE_RESETPROP := true
 # Maintainer/Version
 TW_DEVICE_VERSION := Massatrio16
 
-#OFRP
- OF_FLASHLIGHT_ENABLE=0
- OF_FL_PATH1= '/sys/devices/virtual/torch/torch'
- OF_MAINTAINER= Massatrio16
- OF_FL_PATH2='/sys/devices/virtual/flashlight_core/flashlight/'
- OF_FLASHLIGHT_ENABLE=1
+
+
 
     
