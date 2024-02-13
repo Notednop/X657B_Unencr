@@ -28,15 +28,15 @@
 
 #DYNAMIC PARTITION
 
-/super             auto        /dev/block/platform/bootdevice/by-name/super                        flags=display="Super";backup=1;flashimg=1             
+/super            emmc        /dev/block/platform/bootdevice/by-name/super                        flags=display="Super";backup=1;flashimg=1             
 /system_image	    auto	/dev/block/dm-3    flags=backup=1;display="System";flashimg=1;wipeingui
 /vendor_image	    auto	/dev/block/dm-2    flags=backup=1;display="Vendor";flashimg=1;wipeingui
 /product_image	    auto	/dev/block/dm-1   flags=backup=1;display="Product";flashimg=1;wipeingui
 /system_ext_image	    auto	/dev/block/dm-0    flags=backup=1;display="System_Ext";flashimg=1;wipeingui
-/system      auto     /dev/block/dm-3       flags=display="System";wipeingui
-/vendor             auto        /dev/block/dm-2      flags=display="Vendor";wipeingui
-/product            auto        /dev/block/dm-1     flags=display="Product";wipeingui
-/system_ext		    auto	/dev/block/dm-0      flags=backup=1;display="System_Ext";wipeingui
+/system      emmc     /dev/block/dm-3       flags=display="System";wipeingui;flashimg
+/vendor             emmc        /dev/block/dm-2      flags=display="Vendor";wipeingui;flashimg
+/product            emmc        /dev/block/dm-1     flags=display="Product";wipeingui;flashimg
+/system_ext		    emmc	/dev/block/dm-0      flags=backup=1;display="System_Ext";wipeingui;flashimg
 
 
 # AVB
