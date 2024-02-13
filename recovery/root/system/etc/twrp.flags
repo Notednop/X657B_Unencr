@@ -27,16 +27,17 @@
 /tee2		          	emmc      /dev/block/platform/bootdevice/by-name/tee2
 
 #DYNAMIC PARTITION
+/system_ext4    auto     /dev/block/dm-3       flags=display="System_Ext4";wipeingui
+/vendor_ext4           auto        /dev/block/dm-2      flags=display="Vendor_Ext4";wipeingui
+/product_ext4            auto        /dev/block/dm-1     flags=display="Product_Ext4";wipeingui
+/system_ext_ext4	    auto	/dev/block/dm-0      flags=backup=1;display="System_Ext_Ext4";wipeingui
 
 /super            emmc        /dev/block/platform/bootdevice/by-name/super                        flags=display="Super";backup=1;flashimg=1             
-/system	    auto	/dev/block/dm-3    flags=backup=1;display="System";flashimg=1;wipeingui
-/vendor	    auto	/dev/block/dm-2    flags=backup=1;display="Vendor";flashimg=1;wipeingui
-/product	    auto	/dev/block/dm-1   flags=backup=1;display="Product";flashimg=1;wipeingui
-/system_ext	    auto	/dev/block/dm-0    flags=backup=1;display="System_Ext";flashimg=1;wipeingui
-/system      emmc     /dev/block/dm-3       flags=display="System";wipeingui;flashimg
-/vendor             emmc        /dev/block/dm-2      flags=display="Vendor";wipeingui;flashimg
-/product            emmc        /dev/block/dm-1     flags=display="Product";wipeingui;flashimg
-/system_ext		    emmc	/dev/block/dm-0      flags=backup=1;display="System_Ext";wipeingui;flashimg
+/system_image	    emmc	/dev/block/mapper/system    flags=backup=1;display="System";flashimg=1
+/vendor_image	    emmc	/dev/block/mapper/vendor    flags=backup=1;display="Vendor";flashimg=1
+/product_image	    emmc	/dev/block/mapper/product   flags=backup=1;display="Product";flashimg=1
+/system_ext_image	    emmc	/dev/block/mapper/system_ext    flags=backup=1;display="System_Ext";flashimg=1
+
 
 
 # AVB
