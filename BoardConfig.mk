@@ -120,6 +120,7 @@ TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 
 ## TWRP-Specific configuration
+TWRP_NEW_THEME := true
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /dev/block/loop%d
