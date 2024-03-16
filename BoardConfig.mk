@@ -122,6 +122,7 @@ TWRP_INCLUDE_LOGCAT := true
 ## TWRP-Specific configuration
 TWRP_NEW_THEME := true
 TW_THEME := portrait_hdpi
+TW_EXCLUDE_APEX := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /dev/block/loop%d
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -140,6 +141,9 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_MTP := true
 TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_LPTOOLS := true
 # Maintainer/Version
 TW_DEVICE_VERSION := Massatrio16
 
