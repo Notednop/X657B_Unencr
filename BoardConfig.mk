@@ -143,6 +143,7 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LPTOOLS := true
 # Maintainer/Version
 TW_DEVICE_VERSION := Massatrio16
+gy
 
 
 
