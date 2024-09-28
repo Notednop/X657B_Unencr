@@ -84,14 +84,10 @@ BOARD_MAIN_PARTITION_LIST := system system_ext vendor product
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# System as root
-BOARD_SUPPRESS_SECURE_ERASE := true
-B
 # Recovery
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
-
 #TW_INCLUDE_FBE := true
 TW_INCLUDE_CRYPTO_FBE := true
 
