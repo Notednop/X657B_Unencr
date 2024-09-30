@@ -141,7 +141,7 @@ TW_HAS_MTP := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LPTOOLS := true
 # Maintainer/Version
-TW_DEVICE_VERSION := Massatrio16
+TW_DEVICE_VERSION := Notedphy
 
 
 
